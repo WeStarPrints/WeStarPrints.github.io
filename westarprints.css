@@ -1,0 +1,150 @@
+
+/* CSS file just contains CSS, no need for <style></style> */
+
+
+/* for title buttons at the top */
+.button-container {
+  display: flex;
+  gap: 0px; /* Space between buttons/titles */
+  height: 40px;
+  background-color: rgb(34, 75, 77);
+  font-size: 16px;
+  cursor: pointer;
+  justify-content: center;
+  position:fixed;
+  top:5%;
+  left:50%;
+  transform: translate(-50%, -50%)
+}
+
+.menu-button {
+  background-color: transparent;
+  color: black;
+  border: none;
+  font-family: 'Lexend';
+  font-size: 20px;
+  text-decoration: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  display: inline-block;
+}
+
+.active-button {
+  background-color: red;
+  color: white;
+  border: none;
+  font-family: 'Lexend';
+  font-size: 20px;
+  text-decoration: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  display: inline-block;
+}
+
+.menu-button:hover {
+  background-color: rgb(33, 70, 71);
+  color: white;
+}
+
+.menu-button:active {
+  background-color: red;
+  color: white;
+}
+
+.titleDiv {
+  background-color:rgb(34, 75, 77) ;
+  height: 70px; /* Adjust height to fit buttons */
+  width: 100%; /* Make it full width */
+  position: fixed;
+  top: 0; /* Stick to the top */
+  z-index: 10; /* Ensure it's above other content */
+}
+
+.titleText{
+  font-size: 50px;
+  font-family: 'Platypi';
+  margin-top: 60px;
+  text-align: center;
+}
+
+.ExtraRow{
+  width:fit-content;
+  display: flex;
+  gap: 20px;/* Space between buttons/titles */
+  height: fit-content;
+}
+
+.SecondRowText{
+  width:700px;
+  font-size: 24px;
+}
+
+.OrderRowText{
+  width:700px;
+  font-size: 24px;
+}
+.Fiverr{
+  gap: 30px;
+  justify-content: center;
+}
+
+/* email form CSS*/
+
+.email-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 700px;
+}
+
+.email-form textarea {
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #000000;
+  border-radius: 5px;
+  resize: vertical;
+  height: 150px;
+  outline: none;
+}
+
+
+
+.email-form .file-label,
+.email-form input[type="submit"] {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: 2px solid #000000;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.email-form .file-label {
+  display: inline-block;
+  margin-top: 10px;
+  text-align: center;
+}
+
+
+
+/* edits on the main elements and not classes*/
+
+p{
+  font-family:'Lexend';
+  font-size: 20px;
+  margin-top: 10px;
+  position: relative; /* Ensure content is above the bubbles */
+  z-index: 1; /* Ensure content appears on top of the bubbles */
+}
+
+body {
+  background-color: rgb(44, 93, 95);
+  margin: 0;
+  overflow: auto; 
+
+}
+
