@@ -1,0 +1,561 @@
+/* Responsive title buttons at the top */
+.button-container {
+  display: flex;
+  gap: 0; /* Space between buttons/titles */
+  height: 5vh;
+  background-color: rgb(212, 193, 169);
+  font-size: 1.2vw;
+  cursor: pointer;
+  justify-content: center;
+  position: absolute;
+  top: 3vh;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%; /* Ensure it spans the full width of the screen */
+  border-radius: 50%;
+  align-items: center;
+}
+
+.menu-button {
+  background-color: transparent;
+  color: black;
+  border: none;
+  font-family: 'Lexend', sans-serif;
+  font-size: 1.25em;
+  text-decoration: none;
+  padding: 1vh 2vw;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  display: inline-block;
+  border-radius: 50%;
+  justify-content: center; 
+  align-items: center;
+}
+
+.active-button {
+  background-color: rgb(136, 132, 132);
+  color: white;
+  border: none;
+  font-family: 'Lexend', sans-serif;
+  font-size: 1.25em;
+  text-decoration: none;
+  padding: 1vh 2vw;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  display: inline-block;
+  border-radius: 50%;
+
+}
+
+.menu-button:hover {
+  background-color: rgb(196, 172, 144);
+  color: white;
+}
+
+.menu-button:active {
+  background-color:rgb(196, 172, 144);
+  color: white;
+}
+
+.titleDiv {
+  background-color: rgb(212, 193, 169);
+  height: 10vh; /* Adjust height to fit buttons */
+  width: 100%; /* Make it full width */
+  position: absolute;
+  top: 0; /* Stick to the top */
+  z-index: 10; /* Ensure it's above other content */
+}
+
+.titleText {
+  font-size: 7vh;
+  font-family: 'Platypi', sans-serif;
+  margin-top: 11vh;
+  text-align: center;
+  margin-bottom: 2vh;
+}
+
+.ExtraRow {
+  width: 95vw;
+  display: flex;
+  flex-direction: row; /* Layout items in a row */
+  gap: 2vw; /* Space between buttons/titles */
+  height: 60vh;
+  margin-left: 1vw;
+  flex-wrap: wrap;
+}
+
+/* Main container with text/form on the left and images on the right */
+.OrderRow {
+  display: flex;
+  flex-direction: row; /* Align text/form and images in a row */
+  justify-content: space-between; /* Space between text/form and images */
+  align-items: flex-start; /* Align both sections at the top */
+  gap: 20px; /* Space between text/form and images */
+  margin-bottom: 3vh;
+  margin-left: 2vw;
+}
+
+/* Text and form section stacked vertically */
+.OrderRowTextForm {
+  display: flex;
+  flex-direction: column; /* Stack the text and form vertically */
+  flex: 1; /* Allow this section to take available space */
+}
+
+.SecondExtraRow {
+  width: 95vw;
+  display: flex;
+  flex-direction: row; /* Layout items in a row */
+  gap: 1vw; /* Space between buttons/titles */
+  height: 45vh;
+  margin-left: 1vw;
+  flex-wrap: wrap;
+}
+
+.SecondRowText {
+  flex: 1; /* This will allow the text to take the available space */
+  position: relative;
+  font-size: 1.45vw;
+  margin-left: 1vw;
+}
+
+.SecondRowText2 {
+  flex: 1; /* This will also allow the second text to take available space */
+  position: relative;
+  font-size: 1.45vw;
+  margin-right: 1vw; /* Adds space between text and image */
+}
+
+.OrderRowText {
+  flex: 1;
+  width: 35vw;
+  font-size: 1.45vw;
+}
+
+.MainPageText {
+  flex: 1;
+  width: 55vw;
+  font-size: 1.75vw;
+}
+
+.Fiverr {
+  gap: 3vw;
+  justify-content: center;
+}
+
+/* Responsive email form CSS */
+
+.email-form {
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+  width: 90vw; /* Make the form width relative to the viewport */
+  max-width: 700px; /* Ensure it doesn't exceed a certain size on larger screens */
+}
+
+.email-form textarea {
+  padding: 1vh;
+  font-size: 2vh;
+  border: 2px solid #000000;
+  border-radius: 5px;
+  resize: vertical;
+  height: 20vh;
+  outline: none;
+}
+
+.email-form .file-label,
+.email-form input[type="submit"] {
+  padding: 1vh 2vw;
+  font-size: 1.6vh;
+  border: 2px solid #000000;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  margin-bottom: 1vh;
+}
+
+.email-form .file-label {
+  display: inline-block;
+  margin-top: 1vh;
+  text-align: center;
+}
+
+/* Image container styles */
+.images {
+  display: flex;
+  flex-direction: row; /* Stack images vertically by default */
+  gap: 20px; /* Space between images */
+}
+
+.halotone {
+  flex-direction: row;
+  margin-top: 5vh;
+}
+
+.halotone img {
+  max-width: 100%; /* Ensure image fits within the container */
+  height: 50vh;
+  width: 50vw; 
+  display: block; /* Remove extra space below the image */
+}
+
+.washing {
+  flex-direction: row;
+  left: 125vh;
+  top: 25vh;
+  margin: 20px
+}
+
+.washing img {
+  max-width: 100%; /* Ensure image fits within the container */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Remove extra space below the image */
+}
+
+.right {
+  position: relative;
+
+}
+
+.right img{
+  border-radius: 10%;
+  flex-shrink: 0;
+}
+
+.left {
+  position: relative;
+
+}
+
+.left img{
+  border-radius: 10%;
+  flex-shrink: 0;
+}
+
+
+
+/* footer */
+
+.wrapper {
+  min-height: 100vh; 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+.content {
+  flex-grow: 1; 
+}
+
+.footer {
+  width: 100%; 
+  margin: 50px auto 0 auto; 
+  background-color: rgb(34, 75, 77);
+  padding: 20px;
+  text-align: center;
+  border-top: 2px solid #000000;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 10; /* Ensure it's above other content */
+}
+
+.footer a {
+  font-family: 'Lexend', sans-serif;
+  font-size: 0.8em;
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+  transition: color 0.3s;
+}
+
+.footer a:hover {
+  color: #ffcc00;
+}
+
+
+/* The slideshow of images on main page*/
+
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  width: 60vw; /* Full viewport width */
+  height: 65vh; /* Full viewport height */
+  margin: 0; 
+  padding: 0;
+  left: 20%;
+  overflow: hidden;
+  border-radius: 10%;
+}
+
+/* hides the annoying little dots */
+.slideshow-container input[type="radio"] {
+  display: none; 
+}
+
+
+/* Slides */
+.mySlides {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0; 
+  transition: opacity 1s ease-in-out; 
+  overflow: hidden;
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+}
+
+
+.mySlides img {
+  width: 100%;
+  height: 100%; 
+  object-fit: cover; /* Cover the container, preserving aspect ratio */
+}
+
+
+@keyframes slide {
+  0% { opacity: 0; }
+  10% { opacity: 1; }
+  25% { opacity: 1; }
+  35% { opacity: 0; }
+  100% { opacity: 0; }
+}
+
+.mySlides:nth-child(1) {
+  animation: slide 18s infinite; /* 4s per slide */
+}
+
+.mySlides:nth-child(2) {
+  animation: slide 18s infinite 6s; /* Starts after 4s */
+}
+
+.mySlides:nth-child(3) {
+  animation: slide 18s infinite 12s; /* Starts after 8s */
+}
+
+/* The slideshow of images on main page but now the cad designs from fusion!*/
+
+/* Slideshow container */
+.slideshow-container2 {
+  position: relative;
+  width: 20vw;
+  height: 70vh; 
+  margin-right: 2%; 
+  margin-left: 2%; 
+  padding: 0;
+  overflow: hidden;
+  flex: 1;
+}
+
+/* hides the annoying little dots */
+.slideshow-container2 input[type="radio"] {
+  display: none; 
+}
+
+
+/* Slides */
+.mySlidesCAD {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0; 
+  transition: opacity 1s ease-in-out; 
+  overflow: hidden;
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+}
+
+.mySlidesCAD img {
+  width: 100%;
+  height: 100%; 
+  object-fit: contain; /* Cover the container, preserving aspect ratio */
+}
+
+
+@keyframes slideCAD {
+  0% { opacity: 0;}
+  10% { opacity: 1;}
+  25% { opacity: 1; }
+  35% { opacity: 0; }
+  100% { opacity: 0; }
+}
+
+.mySlidesCAD:nth-child(1) {
+  animation: slideCAD 18s infinite; /* 4s per slide */
+}
+
+.mySlidesCAD:nth-child(2) {
+  animation: slideCAD 18s infinite 6s; /* Starts after 4s */
+}
+
+.mySlidesCAD:nth-child(3) {
+  animation: slideCAD 18s infinite 12s; /* Starts after 8s */
+}
+
+/* timeline on main page */
+
+.designprocess{
+  display: flex;
+  gap: 1.5vw; /* Space between buttons/titles */
+  height: 5vh;
+  position: relative;
+  transform: translateX(-50%);
+  width: 100%; /* Ensure it spans the full width of the screen */
+  margin-left: 49vw;
+  margin-top: 25vh;
+  text-align: center;
+  justify-content: center;
+}
+.designprocess img {
+  margin-top: 2vh;
+  width: 4%; /* Ensure images are responsive */
+  height: 5vh;    /* Maintain aspect ratio */
+  text-align: center;
+  justify-content: center;
+}
+
+.designtext{
+  font-size: 2vw;
+}
+
+/* pointer arrow stuff */
+
+.scroll-button {
+  position: absolute;
+  top: 88vh; 
+  left: 47.5vw;  
+  z-index: 1000; 
+  transform:rotate(90deg);
+}
+
+.scroll-button img {
+  width: 5vw;  
+  height: auto; 
+  
+}
+
+.ExtraMainPageRow {
+  display: flex;
+  flex-direction: row; /* Layout items in a row */
+  gap: 20px; /* Reduced gap for better fit */
+  height: 70vh;
+  margin-left: 5vw;
+  margin-top: 5vh;
+  align-items: center; /* Center items vertically */
+}
+
+
+
+
+/* General styles */
+
+p {
+  font-family: 'Lexend', sans-serif;
+  font-size: 2vh;
+  margin-top: 1vh;
+  position: relative; /* Ensure content is above the bubbles */
+  z-index: 1; /* Ensure content appears on top of the bubbles */
+}
+
+body {
+  background-color: rgb(224, 214, 202);
+  margin: 0;
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+/* Media query for smaller devices */
+
+@media (max-width: 768px) {
+  .slideshow-container {
+    width: 90vw; /* Increase the width to take up more space on smaller screens */
+    height: 50vh; /* Reduce the height for better fit on small screens */
+  }
+
+  .scroll-button {
+    top: 80vh; /* Adjusted for smaller screen heights */
+    left: 40vw; /* Shifted left a bit for smaller widths */
+    transform: rotate(90deg); 
+  }
+
+  .ExtraRow, .SecondExtraRow {
+    flex-direction: column; /* Stack text and image vertically */
+    align-items: center; /* Center the text and image */
+  }
+
+  .right, .left {
+    margin-bottom: 20px; /* Adds space between text and image */
+  }
+
+  .SecondRowText, .SecondRowText2 {
+    text-align: center; /* Center the text for better readability on smaller screens */
+    font-size: 1rem; /* Smaller font size for better readability */
+  }
+
+  .right img, .left img {
+    max-width: 80%; /* Adjust image size to fit smaller screens */
+  }
+
+  .OrderRow {
+    flex-direction: column; /* Keep stacking the items vertically */
+    gap: 10px; /* Reduce the gap further */
+  }
+
+  .OrderRowText, .email-form {
+    max-width: 100%; /* Make text and form take full width */
+    padding: 5px;
+  }
+
+  .halotone, .washing {
+    max-width: 80%; /* Reduce image size for mobile */
+  }
+}
+
+@media (max-width: 480px) {
+  .slideshow-container {
+    width: 100vw; /* Full width for very small screens */
+    height: 40vh; /* Further reduce height for smaller screens */
+  }
+
+  .scroll-button {
+    top: 75vh; /* Further adjust for very small screens */
+    left: 35vw; /* More adjustment for narrower viewports */
+    transform: rotate(90deg); /* Remove rotation for better usability on small screens */
+  }
+
+  .SecondRowText, .SecondRowText2 {
+    font-size: 0.9rem; /* Further reduce font size for mobile */
+  }
+
+  .right img, .left img {
+    max-width: 100%; /* Ensure images fit within the screen */
+  }
+
+  .ExtraRow, .SecondExtraRow {
+    gap: 10px; /* Reduce the space between the stacked items */
+  }
+
+  .OrderRow {
+    flex-direction: column; /* Keep stacking items vertically */
+    gap: 5px;
+  }
+
+  .OrderRowText, .email-form {
+    font-size: 1rem; /* Adjust font size for readability */
+    padding: 5px; /* Minimal padding */
+  }
+
+  .halotone, .washing {
+    max-width: 100%; /* Ensure images take up full width */
+    height: auto; /* Maintain aspect ratio */
+  }
+}

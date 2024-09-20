@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <!--head is used when applying stuff to the website that doesnt show up on the page --> 
+  <head>
+
+    <!--Hopefully this fixes size-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Changing the name of the tab-->
+    <title>
+      WeStarPrints
+    </title>
+
+    <!--load css from seperate file so code doesn't get clumped and hard to read-->
+    <link rel="stylesheet" href="westarprints.css">
+
+    <!--Getting fonts from online thanks to google-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Platypi:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+  </head>
+
+  <!--body is used when applying stuff to the website and it shows up on the website-->
+  <body>
+    <div class="wrapper">
+      <div class="content">
+        <div class="titleDiv">
+          <div class="button-container">
+            <a href="index.html" class="menu-button">Home</a>
+            <a href="westarabout.html" class="menu-button">About Us</a>
+            <a href="westarorders.html" class="active-button">Order</a>
+          </div>
+        </div>
+
+        <div>
+          <p class="titleText">
+            WeStar Prints
+          </p>
+        </div>
+
+        <div class="OrderRow">
+          <div class="OrderRowTextForm">
+            <p class="OrderRowText">
+              Here at WeStarPrints we are very focused on turning your
+              ideas into a reality. Most orders are reviewed before replying back
+              about order confirmation.
+              <br><br>
+              The resin printer we use is the CREALITY HALOT ONE. The build size on the printer is  
+              120*80*160 mm or 4.7*3.1*6.2 in
+              <br><br>
+              We will create and review designs until you are satisfied with the final product. 
+              Larger builds can be built but will cost extra. Please feel free to send any orders down below and we will try to respond as soon as possible.
+            </p>
+  
+            <form class="email-form" action="mailto:bhavyapgandhi@gmail.com" method="post" enctype="text/plain">
+              <textarea name="message" placeholder="Please enter your order with files here. Minimum of 100 characters required" minlength="100" required></textarea>
+              <input type="submit" value="Submit">
+            </form>
+          </div>
+          
+
+          <div class="images">
+            <div class="halotone">
+              <img src="halotone.png" alt="Visual of the Halot One printer">
+            </div>
+    
+            <div class="washing">
+              <img src="washing.png" alt="Visual of the washer">
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="footer">
+        <a href="index.html">Home</a>
+        <a href="westarabout.html">About Us</a>
+        <a href="westarorders.html">Orders</a>
+        <a href="https://www.fiverr.com/s/qDkYrrl">Fiverr</a>
+      </div>
+    </div>
+
+
+  </body>
+
+</html>
